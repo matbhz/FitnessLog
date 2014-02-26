@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		820A38AE18B42C3000CFBA57 /* NewRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A38AD18B42C3000CFBA57 /* NewRecordViewController.m */; };
+		8265C34A18B52A18001BBBDC /* TrainingLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265C34918B52A18001BBBDC /* TrainingLog.m */; };
+		828F71FB18B4281500FE1044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F71FA18B4281500FE1044 /* Foundation.framework */; };
+		828F71FD18B4281500FE1044 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F71FC18B4281500FE1044 /* CoreGraphics.framework */; };
+		828F71FF18B4281500FE1044 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F71FE18B4281500FE1044 /* UIKit.framework */; };
+		828F720518B4281500FE1044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 828F720318B4281500FE1044 /* InfoPlist.strings */; };
+		828F720718B4281500FE1044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 828F720618B4281500FE1044 /* main.m */; };
+		828F720B18B4281500FE1044 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 828F720A18B4281500FE1044 /* AppDelegate.m */; };
+		828F720E18B4281500FE1044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828F720C18B4281500FE1044 /* Main.storyboard */; };
+		828F721118B4281500FE1044 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 828F721018B4281500FE1044 /* MasterViewController.m */; };
+		828F721418B4281600FE1044 /* ExercisesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 828F721318B4281600FE1044 /* ExercisesListViewController.m */; };
+		828F721618B4281600FE1044 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 828F721518B4281600FE1044 /* Images.xcassets */; };
+		828F721D18B4281600FE1044 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F721C18B4281600FE1044 /* XCTest.framework */; };
+		828F721E18B4281600FE1044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F71FA18B4281500FE1044 /* Foundation.framework */; };
+		828F721F18B4281600FE1044 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F71FE18B4281500FE1044 /* UIKit.framework */; };
+		828F722718B4281600FE1044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 828F722518B4281600FE1044 /* InfoPlist.strings */; };
+		828F722918B4281600FE1044 /* MyFitnessLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 828F722818B4281600FE1044 /* MyFitnessLogTests.m */; };
+		82A0A5CA18B6959B00CEE98A /* NewExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A0A5C918B6959B00CEE98A /* NewExerciseViewController.m */; };
+		82A0A5CD18B6B0BC00CEE98A /* ExerciseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A0A5CC18B6B0BC00CEE98A /* ExerciseDetailViewController.m */; };
+		BF8D5AE460AD91F7AC295862 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D5C306C625E113F55460E /* Exercise.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		828F722018B4281600FE1044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 828F71EF18B4281500FE1044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 828F71F618B4281500FE1044;
+			remoteInfo = MyFitnessLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		820A38AC18B42C3000CFBA57 /* NewRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRecordViewController.h; sourceTree = "<group>"; };
+		820A38AD18B42C3000CFBA57 /* NewRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRecordViewController.m; sourceTree = "<group>"; };
+		8265C34818B52A18001BBBDC /* TrainingLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingLog.h; sourceTree = "<group>"; };
+		8265C34918B52A18001BBBDC /* TrainingLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingLog.m; sourceTree = "<group>"; };
+		828F71F718B4281500FE1044 /* FitnessLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		828F71FA18B4281500FE1044 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		828F71FC18B4281500FE1044 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		828F71FE18B4281500FE1044 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		828F720218B4281500FE1044 /* FitnessLog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitnessLog-Info.plist"; sourceTree = "<group>"; };
+		828F720418B4281500FE1044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		828F720618B4281500FE1044 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		828F720818B4281500FE1044 /* FitnessLog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FitnessLog-Prefix.pch"; sourceTree = "<group>"; };
+		828F720918B4281500FE1044 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		828F720A18B4281500FE1044 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		828F720D18B4281500FE1044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		828F720F18B4281500FE1044 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		828F721018B4281500FE1044 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		828F721218B4281500FE1044 /* ExercisesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExercisesListViewController.h; sourceTree = "<group>"; };
+		828F721318B4281600FE1044 /* ExercisesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExercisesListViewController.m; sourceTree = "<group>"; };
+		828F721518B4281600FE1044 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		828F721B18B4281600FE1044 /* FitnessLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		828F721C18B4281600FE1044 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		828F722418B4281600FE1044 /* FitnessLogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitnessLogTests-Info.plist"; sourceTree = "<group>"; };
+		828F722618B4281600FE1044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		828F722818B4281600FE1044 /* MyFitnessLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFitnessLogTests.m; sourceTree = "<group>"; };
+		82A0A5C818B6959B00CEE98A /* NewExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewExerciseViewController.h; sourceTree = "<group>"; };
+		82A0A5C918B6959B00CEE98A /* NewExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewExerciseViewController.m; sourceTree = "<group>"; };
+		82A0A5CB18B6B0BC00CEE98A /* ExerciseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseDetailViewController.h; sourceTree = "<group>"; };
+		82A0A5CC18B6B0BC00CEE98A /* ExerciseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseDetailViewController.m; sourceTree = "<group>"; };
+		BF8D518BEE87BDB4FD557608 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
+		BF8D5C306C625E113F55460E /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		828F71F418B4281500FE1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F71FD18B4281500FE1044 /* CoreGraphics.framework in Frameworks */,
+				828F71FF18B4281500FE1044 /* UIKit.framework in Frameworks */,
+				828F71FB18B4281500FE1044 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828F721818B4281600FE1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F721D18B4281600FE1044 /* XCTest.framework in Frameworks */,
+				828F721F18B4281600FE1044 /* UIKit.framework in Frameworks */,
+				828F721E18B4281600FE1044 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		828F71EE18B4281500FE1044 = {
+			isa = PBXGroup;
+			children = (
+				828F720018B4281500FE1044 /* MyFitnessLog */,
+				828F722218B4281600FE1044 /* MyFitnessLogTests */,
+				828F71F918B4281500FE1044 /* Frameworks */,
+				828F71F818B4281500FE1044 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		828F71F818B4281500FE1044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				828F71F718B4281500FE1044 /* FitnessLog.app */,
+				828F721B18B4281600FE1044 /* FitnessLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		828F71F918B4281500FE1044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				828F71FA18B4281500FE1044 /* Foundation.framework */,
+				828F71FC18B4281500FE1044 /* CoreGraphics.framework */,
+				828F71FE18B4281500FE1044 /* UIKit.framework */,
+				828F721C18B4281600FE1044 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		828F720018B4281500FE1044 /* MyFitnessLog */ = {
+			isa = PBXGroup;
+			children = (
+				828F720918B4281500FE1044 /* AppDelegate.h */,
+				828F720A18B4281500FE1044 /* AppDelegate.m */,
+				828F720C18B4281500FE1044 /* Main.storyboard */,
+				82A0A5CB18B6B0BC00CEE98A /* ExerciseDetailViewController.h */,
+				82A0A5CC18B6B0BC00CEE98A /* ExerciseDetailViewController.m */,
+				82A0A5C818B6959B00CEE98A /* NewExerciseViewController.h */,
+				82A0A5C918B6959B00CEE98A /* NewExerciseViewController.m */,
+				820A38AC18B42C3000CFBA57 /* NewRecordViewController.h */,
+				820A38AD18B42C3000CFBA57 /* NewRecordViewController.m */,
+				828F720F18B4281500FE1044 /* MasterViewController.h */,
+				828F721018B4281500FE1044 /* MasterViewController.m */,
+				828F721218B4281500FE1044 /* ExercisesListViewController.h */,
+				828F721318B4281600FE1044 /* ExercisesListViewController.m */,
+				828F721518B4281600FE1044 /* Images.xcassets */,
+				828F720118B4281500FE1044 /* Supporting Files */,
+				8265C34818B52A18001BBBDC /* TrainingLog.h */,
+				8265C34918B52A18001BBBDC /* TrainingLog.m */,
+				BF8D5C306C625E113F55460E /* Exercise.m */,
+				BF8D518BEE87BDB4FD557608 /* Exercise.h */,
+			);
+			path = MyFitnessLog;
+			sourceTree = "<group>";
+		};
+		828F720118B4281500FE1044 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				828F720218B4281500FE1044 /* FitnessLog-Info.plist */,
+				828F720318B4281500FE1044 /* InfoPlist.strings */,
+				828F720618B4281500FE1044 /* main.m */,
+				828F720818B4281500FE1044 /* FitnessLog-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		828F722218B4281600FE1044 /* MyFitnessLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				828F722818B4281600FE1044 /* MyFitnessLogTests.m */,
+				828F722318B4281600FE1044 /* Supporting Files */,
+			);
+			path = MyFitnessLogTests;
+			sourceTree = "<group>";
+		};
+		828F722318B4281600FE1044 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				828F722418B4281600FE1044 /* FitnessLogTests-Info.plist */,
+				828F722518B4281600FE1044 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		828F71F618B4281500FE1044 /* FitnessLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 828F722C18B4281600FE1044 /* Build configuration list for PBXNativeTarget "FitnessLog" */;
+			buildPhases = (
+				828F71F318B4281500FE1044 /* Sources */,
+				828F71F418B4281500FE1044 /* Frameworks */,
+				828F71F518B4281500FE1044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitnessLog;
+			productName = MyFitnessLog;
+			productReference = 828F71F718B4281500FE1044 /* FitnessLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		828F721A18B4281600FE1044 /* FitnessLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 828F722F18B4281600FE1044 /* Build configuration list for PBXNativeTarget "FitnessLogTests" */;
+			buildPhases = (
+				828F721718B4281600FE1044 /* Sources */,
+				828F721818B4281600FE1044 /* Frameworks */,
+				828F721918B4281600FE1044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				828F722118B4281600FE1044 /* PBXTargetDependency */,
+			);
+			name = FitnessLogTests;
+			productName = MyFitnessLogTests;
+			productReference = 828F721B18B4281600FE1044 /* FitnessLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		828F71EF18B4281500FE1044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = matbhz;
+				TargetAttributes = {
+					828F721A18B4281600FE1044 = {
+						TestTargetID = 828F71F618B4281500FE1044;
+					};
+				};
+			};
+			buildConfigurationList = 828F71F218B4281500FE1044 /* Build configuration list for PBXProject "FitnessLog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 828F71EE18B4281500FE1044;
+			productRefGroup = 828F71F818B4281500FE1044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				828F71F618B4281500FE1044 /* FitnessLog */,
+				828F721A18B4281600FE1044 /* FitnessLogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		828F71F518B4281500FE1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F721618B4281600FE1044 /* Images.xcassets in Resources */,
+				828F720518B4281500FE1044 /* InfoPlist.strings in Resources */,
+				828F720E18B4281500FE1044 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828F721918B4281600FE1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F722718B4281600FE1044 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		828F71F318B4281500FE1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F720B18B4281500FE1044 /* AppDelegate.m in Sources */,
+				820A38AE18B42C3000CFBA57 /* NewRecordViewController.m in Sources */,
+				828F721118B4281500FE1044 /* MasterViewController.m in Sources */,
+				828F720718B4281500FE1044 /* main.m in Sources */,
+				8265C34A18B52A18001BBBDC /* TrainingLog.m in Sources */,
+				82A0A5CA18B6959B00CEE98A /* NewExerciseViewController.m in Sources */,
+				82A0A5CD18B6B0BC00CEE98A /* ExerciseDetailViewController.m in Sources */,
+				828F721418B4281600FE1044 /* ExercisesListViewController.m in Sources */,
+				BF8D5AE460AD91F7AC295862 /* Exercise.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828F721718B4281600FE1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F722918B4281600FE1044 /* MyFitnessLogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		828F722118B4281600FE1044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 828F71F618B4281500FE1044 /* FitnessLog */;
+			targetProxy = 828F722018B4281600FE1044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		828F720318B4281500FE1044 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828F720418B4281500FE1044 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		828F720C18B4281500FE1044 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828F720D18B4281500FE1044 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		828F722518B4281600FE1044 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828F722618B4281600FE1044 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		828F722A18B4281600FE1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		828F722B18B4281600FE1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		828F722D18B4281600FE1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFitnessLog/FitnessLog-Prefix.pch";
+				INFOPLIST_FILE = "MyFitnessLog/FitnessLog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = FitnessLog;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		828F722E18B4281600FE1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFitnessLog/FitnessLog-Prefix.pch";
+				INFOPLIST_FILE = "MyFitnessLog/FitnessLog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = FitnessLog;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		828F723018B4281600FE1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFitnessLog.app/MyFitnessLog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFitnessLog/MyFitnessLog-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyFitnessLogTests/FitnessLogTests-Info.plist";
+				PRODUCT_NAME = FitnessLogTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		828F723118B4281600FE1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFitnessLog.app/MyFitnessLog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFitnessLog/MyFitnessLog-Prefix.pch";
+				INFOPLIST_FILE = "MyFitnessLogTests/FitnessLogTests-Info.plist";
+				PRODUCT_NAME = FitnessLogTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		828F71F218B4281500FE1044 /* Build configuration list for PBXProject "FitnessLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828F722A18B4281600FE1044 /* Debug */,
+				828F722B18B4281600FE1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		828F722C18B4281600FE1044 /* Build configuration list for PBXNativeTarget "FitnessLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828F722D18B4281600FE1044 /* Debug */,
+				828F722E18B4281600FE1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		828F722F18B4281600FE1044 /* Build configuration list for PBXNativeTarget "FitnessLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828F723018B4281600FE1044 /* Debug */,
+				828F723118B4281600FE1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 828F71EF18B4281500FE1044 /* Project object */;
+}
