@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d42836b6-00c5-41bf-92d9-5fe97b072a25" name="Default" comment="Adds internationalization for en-US and pt-BR">
+    <list default="true" id="d42836b6-00c5-41bf-92d9-5fe97b072a25" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitnessLog.xcodeproj/project.xcworkspace/xcuserdata/matbhz.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/FitnessLog.xcodeproj/project.xcworkspace/xcuserdata/matbhz.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.h" afterPath="$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m" afterPath="$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyFitnessLog/MasterViewController.m" afterPath="$PROJECT_DIR$/MyFitnessLog/MasterViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyFitnessLog/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/MyFitnessLog/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyFitnessLog/pt.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/MyFitnessLog/pt.lproj/Main.storyboard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyFitnessLog.iws" />
@@ -32,7 +31,7 @@
       <file leaf-file-name="ExercisesListViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="1" selection-start="7346" selection-end="7346" vertical-scroll-proportion="5.3969297" vertical-offset="59" max-vertical-offset="2655">
+            <state line="146" column="20" selection-start="6384" selection-end="6384" vertical-scroll-proportion="0.37124464" vertical-offset="1942" max-vertical-offset="2655">
               <folding />
             </state>
           </provider>
@@ -278,7 +277,11 @@
       <created>1393465280859</created>
       <updated>1393465280859</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Renames arrays variables to more significant names">
+      <created>1393469479549</created>
+      <updated>1393469479549</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -289,12 +292,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20183486" sideWeight="0.6591512" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20183486" sideWeight="0.67241377" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3408488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3408488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -313,7 +316,8 @@
     </option>
     <MESSAGE value="First commit" />
     <MESSAGE value="Adds internationalization for en-US and pt-BR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds internationalization for en-US and pt-BR" />
+    <MESSAGE value="Renames arrays variables to more significant names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renames arrays variables to more significant names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -434,7 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="1" selection-start="7346" selection-end="7346" vertical-scroll-proportion="5.3969297" vertical-offset="59" max-vertical-offset="2655">
+        <state line="146" column="20" selection-start="6384" selection-end="6384" vertical-scroll-proportion="0.37124464" vertical-offset="1942" max-vertical-offset="2655">
           <folding />
         </state>
       </provider>
