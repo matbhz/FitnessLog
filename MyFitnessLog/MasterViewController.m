@@ -28,8 +28,6 @@
     // Add .plist path to _path
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     _path = [rootPath stringByAppendingPathComponent:@"trainingLogs.plist"];
-    NSLog(@"Using file from: %@", _path);
-
     // Loading file into _objects
     _objects = [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
     // Adding add button to the navigation bar
@@ -54,7 +52,7 @@
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelCreatingNewObject)];
     newRecordViewController.navigationItem.rightBarButtonItem = doneButton;
     newRecordViewController.navigationItem.leftBarButtonItem = cancelButton;
-    newRecordViewController.navigationItem.title = @"Nova ficha";
+    newRecordViewController.navigationItem.title = NSLocalizedString(@"newRecord", nil);
     // Add a navigation controller so we have the navigation bar control buttons on the top of the display
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newRecordViewController];
     // Finally, presents (not push!) the Navigation Controller

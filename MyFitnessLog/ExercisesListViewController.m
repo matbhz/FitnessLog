@@ -40,7 +40,8 @@
     if (self.detailItem) {
 
         // Set the title as the creation date of the current TrainingLog for reference
-        self.trainingLogDateLabel.text = [NSString stringWithFormat:@"Ficha criada em: %@", _detailItem.date];
+
+        self.trainingLogDateLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"recordCreatedAt", nil), _detailItem.date];
         // Add right navigation number to add exercises
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewExerciseModal)];
         self.navigationItem.rightBarButtonItem = addButton;
@@ -64,7 +65,7 @@
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelCreatingNewObject)];
     newExerciseViewController.navigationItem.rightBarButtonItem = doneButton;
     newExerciseViewController.navigationItem.leftBarButtonItem = cancelButton;
-    newExerciseViewController.navigationItem.title = @"Novo Exercício";
+    newExerciseViewController.navigationItem.title = NSLocalizedString(@"newExercise", nil);
     // Add a navigation controller so we have the navigation bar control buttons on the top of the display
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newExerciseViewController];
     // Finally, presents (not push!) the Navigation Controller
@@ -79,7 +80,7 @@
     NSString *sets = newExerciseViewController.sets.text;
     NSString *reps = newExerciseViewController.reps.text;
     NSString *weight = newExerciseViewController.weight.text;
-    NSString *unity = newExerciseViewController.unity.selectedSegmentIndex == 0 ? @"kg" : @"placas";
+    NSString *unity = newExerciseViewController.unity.selectedSegmentIndex == 0 ? @"kg" : NSLocalizedString(@"plates", nil);
 
     //FIXME: There is no space for the warning message in the 3.5 inch screen!
     if ([name isEqualToString:@""] || [sets isEqualToString:@""] || [reps isEqualToString:@""]

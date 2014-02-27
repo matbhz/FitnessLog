@@ -1,0 +1,90 @@
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "175-vo-pZZ"; */
+"175-vo-pZZ.text" = "0";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "2pz-XF-uhl"; */
+"2pz-XF-uhl.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "Exercise name"; ObjectID = "4H3-Kt-1rM"; */
+"4H3-Kt-1rM.title" = "Exercise name";
+
+/* Class = "IBUILabel"; text = "Nome do exercício"; ObjectID = "56W-KO-ZFp"; */
+"56W-KO-ZFp.text" = "Nome do exercício";
+
+/* Class = "IBUITextField"; placeholder = "10"; ObjectID = "79Q-Ky-em5"; */
+"79Q-Ky-em5.placeholder" = "10";
+
+/* Class = "IBUIViewController"; title = "Detail"; ObjectID = "Ah7-4n-0Wa"; */
+"Ah7-4n-0Wa.title" = "Detail";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "E4i-6A-cjr"; */
+"E4i-6A-cjr.text" = "0";
+
+/* Class = "IBUILabel"; text = "Sets"; ObjectID = "EGs-vF-Rge"; */
+"EGs-vF-Rge.text" = "Sets";
+
+/* Class = "IBUILabel"; text = "Nome da nova ficha"; ObjectID = "HyL-gA-eIB"; */
+"HyL-gA-eIB.text" = "Nome da nova ficha";
+
+/* Class = "IBUILabel"; text = "Campos obrigatórios"; ObjectID = "Iia-g4-ct4"; */
+"Iia-g4-ct4.text" = "Campos obrigatórios";
+
+/* Class = "IBUILabel"; text = "Sets:"; ObjectID = "KEn-hV-uHz"; */
+"KEn-hV-uHz.text" = "Sets:";
+
+/* Class = "IBUILabel"; text = "Repetições:"; ObjectID = "L4Y-8Z-thS"; */
+"L4Y-8Z-thS.text" = "Repetições:";
+
+/* Class = "IBUILabel"; text = "Repetições"; ObjectID = "M1E-fw-tFI"; */
+"M1E-fw-tFI.text" = "Repetições";
+
+/* Class = "IBUITextField"; placeholder = "3"; ObjectID = "OFW-Be-hvX"; */
+"OFW-Be-hvX.placeholder" = "3";
+
+/* Class = "IBUISegmentedControl"; OXe-3W-QcN.segmentTitles[0] = "KG"; ObjectID = "OXe-3W-QcN"; */
+"OXe-3W-QcN.segmentTitles[0]" = "KG";
+
+/* Class = "IBUISegmentedControl"; OXe-3W-QcN.segmentTitles[1] = "Placas"; ObjectID = "OXe-3W-QcN"; */
+"OXe-3W-QcN.segmentTitles[1]" = "Placas";
+
+/* Class = "IBUILabel"; text = "Peso"; ObjectID = "P8k-nY-eia"; */
+"P8k-nY-eia.text" = "Peso";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "R2E-aS-2b4"; */
+"R2E-aS-2b4.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "TrainingLog name"; ObjectID = "cra-N8-TIN"; */
+"cra-N8-TIN.title" = "TrainingLog name";
+
+/* Class = "IBUILabel"; text = "Campo obrigatório"; ObjectID = "fc2-I4-TY0"; */
+"fc2-I4-TY0.text" = "Campo obrigatório";
+
+/* Class = "IBUITextField"; placeholder = "20"; ObjectID = "iG0-HK-8pl"; */
+"iG0-HK-8pl.placeholder" = "20";
+
+/* Class = "IBUITextField"; placeholder = "30 (em segs.)"; ObjectID = "iNr-4C-WoY"; */
+"iNr-4C-WoY.placeholder" = "30 (em segs.)";
+
+/* Class = "IBUILabel"; text = "Descanso"; ObjectID = "ibO-ER-7CQ"; */
+"ibO-ER-7CQ.text" = "Descanso";
+
+/* Class = "IBUILabel"; text = "Unidade"; ObjectID = "kst-Iy-1Oo"; */
+"kst-Iy-1Oo.text" = "Unidade";
+
+/* Class = "IBUILabel"; text = "TrainingLog creation date"; ObjectID = "lfo-KV-GpW"; */
+"lfo-KV-GpW.text" = "TrainingLog creation date";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "loA-zS-t5D"; */
+"loA-zS-t5D.text" = "0";
+
+/* Class = "IBUITableViewController"; title = "Master"; ObjectID = "pGg-6v-bdr"; */
+"pGg-6v-bdr.title" = "Master";
+
+/* Class = "IBUINavigationItem"; title = "Fichas"; ObjectID = "tQt-TN-PWz"; */
+"tQt-TN-PWz.title" = "Fichas";
+
+/* Class = "IBUITextField"; placeholder = "Exemplo: Supino inclinado"; ObjectID = "w6a-mK-Oae"; */
+"w6a-mK-Oae.placeholder" = "Exemplo: Supino inclinado";
+
+/* Class = "IBUILabel"; text = "Peso:"; ObjectID = "wHE-pY-SSI"; */
+"wHE-pY-SSI.text" = "Peso:";
