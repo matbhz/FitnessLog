@@ -28,10 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExercisesListViewController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExercisesListViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="20" selection-start="6384" selection-end="6384" vertical-scroll-proportion="0.37124464" vertical-offset="1942" max-vertical-offset="2655">
+            <state line="146" column="20" selection-start="6384" selection-end="6384" vertical-scroll-proportion="0.0" vertical-offset="2190" max-vertical-offset="2730">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingLog.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyFitnessLog/TrainingLog.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="42" selection-start="83" selection-end="83" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -40,7 +49,7 @@
       <file leaf-file-name="ExercisesListViewController.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="14" column="42" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -72,7 +81,6 @@
         <option value="$PROJECT_DIR$/MyFitnessLog/ExerciseDetailViewController.m" />
         <option value="$PROJECT_DIR$/MyFitnessLog/NewExerciseViewController.h" />
         <option value="$PROJECT_DIR$/MyFitnessLog/NewRecordViewController.m" />
-        <option value="$PROJECT_DIR$/MyFitnessLog/TrainingLog.m" />
         <option value="$PROJECT_DIR$/MyFitnessLog/Base.lproj/Localizable.strings" />
         <option value="$PROJECT_DIR$/MyFitnessLog/pt.lproj/Localizable.strings" />
         <option value="$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.h" />
@@ -80,6 +88,7 @@
         <option value="$PROJECT_DIR$/MyFitnessLog/NewLogViewController.h" />
         <option value="$PROJECT_DIR$/MyFitnessLog/MasterViewController.m" />
         <option value="$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m" />
+        <option value="$PROJECT_DIR$/MyFitnessLog/TrainingLog.m" />
       </list>
     </option>
   </component>
@@ -114,7 +123,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,6 +205,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,22 +290,26 @@
       <created>1393469479549</created>
       <updated>1393469479549</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixes warning from wrong assignement to TrainingLog date, which is a NSString">
+      <created>1393470379676</created>
+      <updated>1393470379676</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32493368" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32407406" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20183486" sideWeight="0.67241377" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20183486" sideWeight="0.67374" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32625994" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3408488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -317,7 +330,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Adds internationalization for en-US and pt-BR" />
     <MESSAGE value="Renames arrays variables to more significant names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renames arrays variables to more significant names" />
+    <MESSAGE value="Fixes warning from wrong assignement to TrainingLog date, which is a NSString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes warning from wrong assignement to TrainingLog date, which is a NSString" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,39 +342,24 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyFitnessLog/TrainingLog.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="42" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/Base.lproj/Localizable.strings">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="105" selection-end="105" vertical-scroll-proportion="0.15690376" vertical-offset="0" max-vertical-offset="478">
-          <folding />
-        </state>
+        <state line="5" column="24" selection-start="105" selection-end="105" vertical-scroll-proportion="0.15690376" vertical-offset="0" max-vertical-offset="478" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/pt.lproj/Localizable.strings">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="240">
-          <folding />
-        </state>
+        <state line="9" column="25" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="240" />
       </provider>
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="334" column="21" selection-start="19715" selection-end="19715" vertical-scroll-proportion="0.33239833" vertical-offset="4728" max-vertical-offset="7200">
-          <folding />
-        </state>
+        <state line="334" column="21" selection-start="19715" selection-end="19715" vertical-scroll-proportion="0.33239833" vertical-offset="4728" max-vertical-offset="7200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/NewExerciseViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.18595041" vertical-offset="0" max-vertical-offset="726">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.18595041" vertical-offset="0" max-vertical-offset="726" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/MasterViewController.h">
@@ -372,61 +371,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/NewExerciseViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="564" selection-end="564" vertical-scroll-proportion="0.5334728" vertical-offset="0" max-vertical-offset="478">
-          <folding />
-        </state>
+        <state line="17" column="43" selection-start="564" selection-end="564" vertical-scroll-proportion="0.5334728" vertical-offset="0" max-vertical-offset="478" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/AppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690" />
       </provider>
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/include/objc/NSObject.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="14" selection-start="971" selection-end="971" vertical-scroll-proportion="0.50627613" vertical-offset="358" max-vertical-offset="1605">
-          <folding />
-        </state>
+        <state line="41" column="14" selection-start="971" selection-end="971" vertical-scroll-proportion="0.50627613" vertical-offset="358" max-vertical-offset="1605" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/NewLogViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
+        <state line="10" column="31" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStoryboardSegue.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="21" column="35" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/MasterViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="48" selection-start="5802" selection-end="5802" vertical-scroll-proportion="0.0" vertical-offset="1702" max-vertical-offset="2415">
-          <folding>
-            <element signature="e#149#181#0" expanded="true" />
-            <element signature="e#2965#3001#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExerciseDetailViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="1" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.90605426" vertical-offset="226" max-vertical-offset="795">
-          <folding />
-        </state>
+        <state line="45" column="1" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.90605426" vertical-offset="226" max-vertical-offset="795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExerciseDetailViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.28183717" vertical-offset="0" max-vertical-offset="479">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.28183717" vertical-offset="0" max-vertical-offset="479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.h">
@@ -438,7 +420,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFitnessLog/ExercisesListViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="20" selection-start="6384" selection-end="6384" vertical-scroll-proportion="0.37124464" vertical-offset="1942" max-vertical-offset="2655">
+        <state line="146" column="20" selection-start="6384" selection-end="6384" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="2655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyFitnessLog/TrainingLog.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="83" selection-end="83" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="750">
           <folding />
         </state>
       </provider>

@@ -17,7 +17,7 @@
         // Set the creation date of this new TrainingLog
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"dd/MM/yyyy"]; // TODO: Check location for US-like date format
-        self.date = (@"%@", [dateFormatter stringFromDate:[NSDate date]]);
+        self.date = [dateFormatter stringFromDate:[NSDate date]];
 
         self.excercises = [[NSMutableArray alloc] init];
     }
