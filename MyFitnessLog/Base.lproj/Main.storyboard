@@ -66,7 +66,7 @@
         <!--New Record View Controller-->
         <scene sceneID="rFl-xz-52D">
             <objects>
-                <viewController storyboardIdentifier="NewRecordViewController" id="ddI-g6-jGf" customClass="NewRecordViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewLogViewController" id="ddI-g6-jGf" customClass="NewLogViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E0a-gs-iBb"/>
                         <viewControllerLayoutGuide type="bottom" id="Ltr-bR-4a8"/>

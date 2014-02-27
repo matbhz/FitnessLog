@@ -9,7 +9,7 @@
 #import "MasterViewController.h"
 
 #import "ExercisesListViewController.h"
-#import "NewRecordViewController.h"
+#import "NewLogViewController.h"
 #import "TrainingLog.h"
 
 @interface MasterViewController () {
@@ -31,9 +31,9 @@
     // Loading file into _objects
     _objects = [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
     // Adding add button to the navigation bar
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObjectModal)];
     self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,44 +42,44 @@
 }
 
 - (void)insertNewObjectModal {
-    // TODO: Create a initWithSomething to encapsulate the creation and presentation of the NewRecordViewController
-    // Get the storyboard, so we can access the views designed through the XCode interface
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    // Add an ID for this controller in the story board, then retrieve it programmatically
-    NewRecordViewController *newRecordViewController = [storyboard instantiateViewControllerWithIdentifier:@"NewRecordViewController"];
-    // Create a CANCEL and DONE button for the Navigation bar
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneCreatingNewObject)];
-    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelCreatingNewObject)];
-    newRecordViewController.navigationItem.rightBarButtonItem = doneButton;
-    newRecordViewController.navigationItem.leftBarButtonItem = cancelButton;
-    newRecordViewController.navigationItem.title = NSLocalizedString(@"newRecord", nil);
+    // Create the NewLogViewController for presentation
+    NewLogViewController *newRecordViewController = [self createNewRecordViewController];
     // Add a navigation controller so we have the navigation bar control buttons on the top of the display
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newRecordViewController];
     // Finally, presents (not push!) the Navigation Controller
     [self presentViewController:navigationController animated:YES completion:nil];
 }
 
-- (void)doneCreatingNewObject {
-    // FIXME: I'm sure there is a better way to retrieve the ViewController (not the NavigationController that I passed on isertNewObjectModal)
-    NewRecordViewController *newRecordViewController = (NewRecordViewController *) self.presentedViewController.childViewControllers[0];
-    NSString *text = newRecordViewController.theNewRecordField.text;
-    bool isRecordNameEmpty = [text isEqualToString:@""];
+- (NewLogViewController *)createNewRecordViewController {
+    // Get the storyboard, so we can access the views designed through the XCode interface
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    // Add an ID for this controller in the story board, then retrieve it programmatically
+    NewLogViewController *newRecordViewController = [storyboard instantiateViewControllerWithIdentifier:@"NewLogViewController"];
+    // Create a CANCEL and DONE button for the Navigation bar with their respective actions
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneCreatingNewObject)];
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelCreatingNewObject)];
+    newRecordViewController.navigationItem.rightBarButtonItem = doneButton;
+    newRecordViewController.navigationItem.leftBarButtonItem = cancelButton;
+    newRecordViewController.navigationItem.title = NSLocalizedString(@"newRecord", nil);
+    return newRecordViewController;
+}
 
-    if (isRecordNameEmpty) {
+- (void)doneCreatingNewObject {
+    // FIXME: I'm sure there is a better way to retrieve the ViewController (not the NavigationController that I passed on insertNewObjectModal)
+    NewLogViewController *newRecordViewController = (NewLogViewController *) self.presentedViewController.childViewControllers[0];
+    NSString *newLogName = newRecordViewController.theNewRecordField.text;
+
+    if ([newLogName isEqualToString:@""]) {
         newRecordViewController.warningMessage.hidden = FALSE;
     } else {
         if (!_objects) {
             _objects = [[NSMutableArray alloc] init];
         }
-
-        //TODO: Do not allow TrainingLogs with already existing name
-        TrainingLog *trainingLog = [[TrainingLog alloc] initWithName:text];
-        // Add TrainingLog to the TableView
+        TrainingLog *trainingLog = [[TrainingLog alloc] initWithName:newLogName];
+        // Add TrainingLog to the _objects array
         [_objects insertObject:trainingLog atIndex:0];
-
-        [NSKeyedArchiver archiveRootObject:_objects toFile:_path];
-
-
+        // Save new log the file
+        [self save];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         [self dismissViewControllerAnimated:YES completion:nil];
@@ -91,9 +91,7 @@
 }
 
 - (void)save {
-
     [NSKeyedArchiver archiveRootObject:_objects toFile:_path];
-
 }
 
 #pragma mark - Table View
@@ -153,6 +151,5 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
-
 
 @end

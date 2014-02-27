@@ -25,33 +25,22 @@
 - (void)setDetailItem:(id)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-
-        // Loading file into _objects
+        // Extract exercises list from the TrainingLog (newDetailItem) into _objects
         _objects = _detailItem.excercises;
-
         // Update the view.
         [self configureView];
-
     }
 }
 
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-
         // Set the title as the creation date of the current TrainingLog for reference
-
         self.trainingLogDateLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"recordCreatedAt", nil), _detailItem.date];
         // Add right navigation number to add exercises
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewExerciseModal)];
         self.navigationItem.rightBarButtonItem = addButton;
-
-        // Retrieves the TrainingLog coming from the previous view
-        TrainingLog *trainingLog = self.detailItem;
-        self.navigationItem.title = trainingLog.name;
-
-
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.navigationItem.title = self.detailItem.name;
     }
 }
 
@@ -82,7 +71,6 @@
     NSString *weight = newExerciseViewController.weight.text;
     NSString *unity = newExerciseViewController.unity.selectedSegmentIndex == 0 ? @"kg" : NSLocalizedString(@"plates", nil);
 
-    //FIXME: There is no space for the warning message in the 3.5 inch screen!
     if ([name isEqualToString:@""] || [sets isEqualToString:@""] || [reps isEqualToString:@""]
             || [weight isEqualToString:@""] || [unity isEqualToString:@""]) {
         newExerciseViewController.warningMessage.hidden = FALSE;
@@ -91,11 +79,9 @@
             _objects = [[NSMutableArray alloc] init];
         }
 
-        //TODO: Do not allow TrainingLogs with already existing name
         Exercise *exercise = [[Exercise alloc] initWithName:name sets:sets reps:reps weight:weight unity:unity];
         // Add Exercise to the TableView
         [_objects insertObject:exercise atIndex:0];
-        // TODO: add exercise into its respective training log and save to file
         self.detailItem.excercises = _objects;
         MasterViewController *masterViewController = self.navigationController.viewControllers[0];
         [masterViewController save];
@@ -185,6 +171,5 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
-
 
 @end

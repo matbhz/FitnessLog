@@ -1,5 +1,5 @@
 //
-//  NewRecordViewController.h
+//  NewLogViewController.h
 //  MyFitnessLog
 //
 //  Created by Matheus Felipe on 18/02/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewRecordViewController : UIViewController
+@interface NewLogViewController : UIViewController
 
 @property(weak, nonatomic) IBOutlet UITextField *theNewRecordField;
 @property(weak, nonatomic) IBOutlet UILabel *warningMessage;

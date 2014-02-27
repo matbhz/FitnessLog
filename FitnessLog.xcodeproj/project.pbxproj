@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		820A38AE18B42C3000CFBA57 /* NewRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A38AD18B42C3000CFBA57 /* NewRecordViewController.m */; };
+		820A38AE18B42C3000CFBA57 /* NewLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A38AD18B42C3000CFBA57 /* NewLogViewController.m */; };
 		8229AC3A18BEC8E0003BDE5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8229AC3C18BEC8E0003BDE5C /* Localizable.strings */; };
 		8265C34A18B52A18001BBBDC /* TrainingLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265C34918B52A18001BBBDC /* TrainingLog.m */; };
 		828F71FB18B4281500FE1044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828F71FA18B4281500FE1044 /* Foundation.framework */; };
@@ -41,8 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		820A38AC18B42C3000CFBA57 /* NewRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRecordViewController.h; sourceTree = "<group>"; };
-		820A38AD18B42C3000CFBA57 /* NewRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRecordViewController.m; sourceTree = "<group>"; };
+		820A38AC18B42C3000CFBA57 /* NewLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewLogViewController.h; sourceTree = "<group>"; };
+		820A38AD18B42C3000CFBA57 /* NewLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewLogViewController.m; sourceTree = "<group>"; };
 		8229AC3B18BEC8E0003BDE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8229AC3F18BEC8F0003BDE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8229AC4218BECABC003BDE5C /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 				82A0A5CC18B6B0BC00CEE98A /* ExerciseDetailViewController.m */,
 				82A0A5C818B6959B00CEE98A /* NewExerciseViewController.h */,
 				82A0A5C918B6959B00CEE98A /* NewExerciseViewController.m */,
-				820A38AC18B42C3000CFBA57 /* NewRecordViewController.h */,
-				820A38AD18B42C3000CFBA57 /* NewRecordViewController.m */,
+				820A38AC18B42C3000CFBA57 /* NewLogViewController.h */,
+				820A38AD18B42C3000CFBA57 /* NewLogViewController.m */,
 				828F720F18B4281500FE1044 /* MasterViewController.h */,
 				828F721018B4281500FE1044 /* MasterViewController.m */,
 				828F721218B4281500FE1044 /* ExercisesListViewController.h */,
@@ -287,7 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				828F720B18B4281500FE1044 /* AppDelegate.m in Sources */,
-				820A38AE18B42C3000CFBA57 /* NewRecordViewController.m in Sources */,
+				820A38AE18B42C3000CFBA57 /* NewLogViewController.m in Sources */,
 				828F721118B4281500FE1044 /* MasterViewController.m in Sources */,
 				828F720718B4281500FE1044 /* main.m in Sources */,
 				8265C34A18B52A18001BBBDC /* TrainingLog.m in Sources */,
