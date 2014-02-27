@@ -12,7 +12,7 @@
 
 @interface ExercisesListViewController : UITableViewController
 
-@property(strong, nonatomic) TrainingLog *detailItem;
+@property(strong, nonatomic) TrainingLog *trainingLogs;
 @property(weak, nonatomic) IBOutlet UILabel *trainingLogDateLabel;
 
 @end

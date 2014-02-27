@@ -11,9 +11,10 @@
 #import "NewExerciseViewController.h"
 #import "Exercise.h"
 #import "MasterViewController.h"
+#import "ExerciseDetailViewController.h"
 
 @interface ExercisesListViewController () {
-    NSMutableArray *_objects;
+    NSMutableArray *_exercises;
 }
 - (void)configureView;
 @end
@@ -22,11 +23,11 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        // Extract exercises list from the TrainingLog (newDetailItem) into _objects
-        _objects = _detailItem.excercises;
+- (void)setTrainingLogs:(id)newTrainingLogs {
+    if (_trainingLogs != newTrainingLogs) {
+        _trainingLogs = newTrainingLogs;
+        // Extract exercises list from the TrainingLog (newTrainingLogs) into _trainingLogs
+        _exercises = _trainingLogs.excercises;
         // Update the view.
         [self configureView];
     }
@@ -34,13 +35,13 @@
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    if (self.detailItem) {
+    if (self.trainingLogs) {
         // Set the title as the creation date of the current TrainingLog for reference
-        self.trainingLogDateLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"recordCreatedAt", nil), _detailItem.date];
+        self.trainingLogDateLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"recordCreatedAt", nil), _trainingLogs.date];
         // Add right navigation number to add exercises
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewExerciseModal)];
         self.navigationItem.rightBarButtonItem = addButton;
-        self.navigationItem.title = self.detailItem.name;
+        self.navigationItem.title = self.trainingLogs.name;
     }
 }
 
@@ -75,14 +76,14 @@
             || [weight isEqualToString:@""] || [unity isEqualToString:@""]) {
         newExerciseViewController.warningMessage.hidden = FALSE;
     } else {
-        if (!_objects) {
-            _objects = [[NSMutableArray alloc] init];
+        if (!_exercises) {
+            _exercises = [[NSMutableArray alloc] init];
         }
 
         Exercise *exercise = [[Exercise alloc] initWithName:name sets:sets reps:reps weight:weight unity:unity];
         // Add Exercise to the TableView
-        [_objects insertObject:exercise atIndex:0];
-        self.detailItem.excercises = _objects;
+        [_exercises insertObject:exercise atIndex:0];
+        self.trainingLogs.excercises = _exercises;
         MasterViewController *masterViewController = self.navigationController.viewControllers[0];
         [masterViewController save];
 
@@ -116,13 +117,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _objects.count;
+    return _exercises.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    Exercise *exercise = _objects[indexPath.row];
+    Exercise *exercise = _exercises[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@x%@)", exercise.name, exercise.sets, exercise.reps];
 
     return cell;
@@ -135,9 +136,9 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        [_exercises removeObjectAtIndex:indexPath.row];
 
-        self.detailItem.excercises = _objects;
+        self.trainingLogs.excercises = _exercises;
 
         MasterViewController *masterViewController = self.navigationController.viewControllers[0];
         [masterViewController save];
@@ -167,7 +168,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showExerciseDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Exercise *object = _objects[indexPath.row];
+        Exercise *object = _exercises[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }

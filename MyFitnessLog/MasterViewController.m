@@ -13,7 +13,7 @@
 #import "TrainingLog.h"
 
 @interface MasterViewController () {
-    NSMutableArray *_objects;
+    NSMutableArray *_trainingLogs;
 }
 @end
 
@@ -28,8 +28,8 @@
     // Add .plist path to _path
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     _path = [rootPath stringByAppendingPathComponent:@"trainingLogs.plist"];
-    // Loading file into _objects
-    _objects = [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
+    // Loading file into _trainingLogs
+    _trainingLogs = [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
     // Adding add button to the navigation bar
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObjectModal)];
     self.navigationItem.rightBarButtonItem = addButton;
@@ -72,12 +72,12 @@
     if ([newLogName isEqualToString:@""]) {
         newRecordViewController.warningMessage.hidden = FALSE;
     } else {
-        if (!_objects) {
-            _objects = [[NSMutableArray alloc] init];
+        if (!_trainingLogs) {
+            _trainingLogs = [[NSMutableArray alloc] init];
         }
         TrainingLog *trainingLog = [[TrainingLog alloc] initWithName:newLogName];
-        // Add TrainingLog to the _objects array
-        [_objects insertObject:trainingLog atIndex:0];
+        // Add TrainingLog to the _trainingLogs array
+        [_trainingLogs insertObject:trainingLog atIndex:0];
         // Save new log the file
         [self save];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -91,7 +91,7 @@
 }
 
 - (void)save {
-    [NSKeyedArchiver archiveRootObject:_objects toFile:_path];
+    [NSKeyedArchiver archiveRootObject:_trainingLogs toFile:_path];
 }
 
 #pragma mark - Table View
@@ -101,13 +101,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _objects.count;
+    return _trainingLogs.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    TrainingLog *trainingLogCell = _objects[indexPath.row];
+    TrainingLog *trainingLogCell = _trainingLogs[indexPath.row];
     cell.textLabel.text = trainingLogCell.name;
 
     return cell;
@@ -120,8 +120,8 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [NSKeyedArchiver archiveRootObject:_objects toFile:_path];
+        [_trainingLogs removeObjectAtIndex:indexPath.row];
+        [NSKeyedArchiver archiveRootObject:_trainingLogs toFile:_path];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -147,8 +147,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showExercises"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        TrainingLog *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        TrainingLog *object = _trainingLogs[indexPath.row];
+        [[segue destinationViewController] setTrainingLogs:object];
     }
 }
 
